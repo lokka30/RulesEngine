@@ -1,0 +1,26 @@
+rules:
+  - id: "broadcast-boss-notifications"
+    description: "Broadcast when a boss has been processed by RE"
+    triggers: [on-entity-spawn]
+    conditions:
+      - id: entity-type
+        whitelist: [ENDER_DRAGON, WITHER, WARDEN]
+    actions:
+      - id: broadcast-messages-to-server
+        messages:
+          - "&b&lRE:&7 A &b%entity-name%&7 has been processed by Rules Engine."
+
+  - id: "kill-nether-silverfishes"
+    description: "Silverfishes in the nether are killed and then the server is notified"
+    triggers: [on-entity-spawn, on-entity-scanned]
+    conditions:
+      - id: entity-type
+        whitelist: [SILVERFISH]
+      - id: entity-world
+        whitelist: [world_nether]
+    actions:
+      - id: kill-entity
+        allow-drops: false
+      - id: broadcast-messages-to-server
+        messages:
+          - "&b&lRE:&7 Killed a nether silverfish."
