@@ -1,24 +1,24 @@
-# ⚙️ RulesEngine
-
-> ⚠️ **Warning:** This library is currently in very early stages, and is not cursuitable for adoption in your resource.
-
-Small Kotlin library to give your Minecraft server plugin an expandable YAML-based scripting engine.
-
-*This is not a plugin, it is a sub-system designed to be incorporated inside plugins to give its users greater power in customisation.*
+# RulesEngine
 
 
+**Work in progress and not yet suitable for production usage; see Roadmap below.**
 
-## 🔗 Quick Links
+A small Kotlin library to enhance Bukkit/Velocity/Folia/Bungee/Minestom/Krypton plugins with an expandable YAML scripting engine.
+
+## Quick Links
 
 |                                |
 |--------------------------------|
 | [Rules Example][Rules Example] |
 
+## How It Works
 
+By integrating RulesEngine into your plugin, server administrators can use the power of your plugin with YAML-based scripting to make something powerful. For example, a 'run commands on <event>' plugin can be configured almost purely with RulesEngine scripts and its built in features.
 
-## 🗺️ Roadmap
+## Roadmap
 
-(No ETAs provided/providable.)
+<details>
+<summary>Show/Hide</summary>
 
 ### Stage 0
 
@@ -37,17 +37,17 @@ Small Kotlin library to give your Minecraft server plugin an expandable YAML-bas
 - [ ] Minestom platform implementation complete
 - [ ] Krypton platform implementation complete
 
+</details>
+
 
 
 ## 📜 License
 
 RulesEngine is licensed under GNU GPL v3.0: see [License][License].
 
-Copyright Notice:
+- Copyright (c) 2024 lokka30
 
-```
-Copyright (c) 2024 lokka30
-```
+
 
 
 [License]: LICENSE.md
